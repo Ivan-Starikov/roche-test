@@ -1,0 +1,8 @@
+@import "intro.css";
+@import "history.css";
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

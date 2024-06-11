@@ -1,0 +1,34 @@
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 240px;
+  line-height: 14px;
+  letter-spacing: 0.5px;
+}
+
+.header__info {
+  margin-bottom: 243px;
+  color: var(--accent-text-red);
+  font-size: 14px;
+}
+
+.header__info-accent {
+  color: var(--accent-text-black);
+}
+
+.header__logo {
+  width: 100%;
+  max-width: 285px;
+}
+
+@media (max-width: 640px) {
+  header {
+    margin-bottom: 240px;
+  }
+
+  .header__info {
+    font-size: 12px;
+    margin-bottom: 150px;
+  }
+}

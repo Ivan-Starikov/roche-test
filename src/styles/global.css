@@ -1,0 +1,75 @@
+:root {
+  --bg-color: #f0eedb;
+  --accent-text-red: #b51b1b;
+  --accent-text-red2: #a53f3f;
+  --accent-text-black: #290b0b;
+}
+
+@font-face {
+  font-family: "PTMono";
+  src:
+    local("PTMono"),
+    local("PTMono"),
+    url("/fonts/PTMono.woff2") format("woff2");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "PTMono";
+  src:
+    local("PTMono"),
+    local("PTMono-Bold"),
+    url("/fonts/PTMono.woff2") format("woff2");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "GentoDream";
+  src: url("/fonts/GentoDream.ttf");
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg-color);
+  font-family: PTMono;
+  font-size: 18px;
+  line-height: 26px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 36px 20px 30px;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+p {
+  max-width: 400px;
+  text-align: center;
+}
+
+ul {
+  display: flex;
+  gap: 10px;
+  list-style-type: none;
+  font-size: 14px;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+@media (max-width: 640px) {
+  body {
+    font-size: 16px;
+  }
+}
